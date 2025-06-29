@@ -1,0 +1,570 @@
+<!--
+
+UTF-8 character set:
+
+    Exclamation mark: &#33;
+    Quotation mark (double): &quot; or &#34;
+    Number sign: &#35;
+    Ampersand: &amp; or &#38;
+    Quotation mark (single) or apostrophe: &apos; or &#39;
+    Left parenthesis: &#40;
+    Right parenthesis: &#41;
+    Asterisk: &#42;
+    Plus sign: &#43;
+    Comma: &#44;
+    Hyphen-minus: &#45;
+    Full stop: &#46;
+    Solidus: &#47;
+    Colon: &#58;
+    Semicolon: &#59;
+    Less than: &lt; or &#60;
+    Equals sign: &#61;
+    Greater than: &gt; or &#62;
+    Question mark: &#63;
+    Commercial at: &#64;
+    Left square bracket: &#91;
+    Reverse solidus: &#92;
+    Right square bracket: &#93;
+    Vertical line: &#124;
+    Latin capital letter U with diaeresis: &#220;
+    Small letter Iota with dialytika and tonos: &#912;
+    Capital letter Iota with dialytika: &#938;
+    Small letter Upsilon with dialytika and tonos: &#944;
+    
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Γιώργος Καρακούλας &#124; Λογιστικό γραφείο</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="../CSS files/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- Navigation bar with four elements -->
+    <nav class="navbar navbar-expand-sm py-3 fixed-top">
+        <ul class="navbar-nav">
+            <li class="nav-item px-sm-2 px-md-3 px-lg-4 px-xl-5">
+                <a href="./index.html" class="nav-link px-sm-3 px-md-4 px-xl-5" aria-current="page">Αρχική</a>
+            </li>
+
+            <li class="nav-item px-sm-2 px-md-3 px-lg-4 px-xl-5">
+                <a href="./services.html" class="nav-link px-sm-3 px-md-4 px-xl-5">Υπηρεσίες</a>
+            </li>
+
+            <li class="nav-item px-sm-2 px-md-3 px-lg-4 px-xl-5">
+                <a href="./clientele.html" class="nav-link px-sm-3 px-md-4 px-xl-5">Πελατολόγιο</a>
+            </li>
+            
+            <li class="nav-item px-sm-2 px-md-3 px-lg-4 px-xl-5">
+                <a href="./contact.html" class="nav-link px-sm-3 px-md-4 px-xl-5">Επικοινωνία</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- Hero images in a carousel -->
+    <section id="carouselServices" class="carousel slide carousel-dark" data-bs-ride="carousel">
+        <!-- Dash-shaped buttons that control the carousel -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+
+            <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+            <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Images with description -->
+        <div class="carousel-inner">
+            <article class="carousel-item active">
+                <div class="background"></div>
+
+                <div class="carousel-caption text-center">
+                    <h1>Λογιστικές υπηρεσίες</h1>
+
+                    <a href="./services.html">
+                        <p>Πατήστε εδώ&#44; για να μάθετε σε ποια ζητήματα λογιστικής φύσεως μπορούμε να σας εξυπηρετήσουμε&#46;</p>
+                    </a>
+                </div>
+            </article>
+
+            <article class="carousel-item">
+                <div class="background"></div>
+
+                <div class="carousel-caption text-center">
+                    <h1>Φορολογικές υπηρεσίες</h1>
+
+                    <a href="./services.html">
+                        <p>Κάντε click&#44; για να δείτε αναλυτικά τις φορολογικές υπηρεσίες που προσφέρει το γραφείο μας&#46;</p>
+                    </a>
+                </div>
+            </article>
+
+            <article class="carousel-item">
+                <div class="background"></div>
+
+                <div class="carousel-caption text-center">
+                    <h1>Εξειδικευμένες υπηρεσίες</h1>
+                    
+                    <a href="./services.html">
+                        <p>Πατήστε εδώ&#44; για να ενημερωθείτε σχετικά με τα εξειδικευμένα θέματα για τα οποία παρέχουμε λύσεις&#46;</p>
+                    </a>
+                </div>
+            </article>
+        </div>
+
+        <!-- Arrow-shaped button that move the carousel back and forth -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselServices" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselServices" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </section>
+
+
+    <!-- Grid that contains cards with the logos and the brand names of a few clients -->
+    <section class="album p-5">
+        <div class="container">
+            <div class="row row-cols-sm-2 row-cols-lg-3 g-4">
+                <!-- Card for client no.1 -->
+                <article class="col pt-3 d-flex justify-content-center">
+                    <div class="d-flex flex-column justify-content-between align-items-center pb-4">
+                        <img src="../Logos/acta.png" alt="Client no.1" id="logo-1">
+
+                        <button type="button" class="btn btn-primary py-2" data-bs-toggle="modal" data-bs-target="#Modal1">
+                            Πληροφορίες
+                        </button>
+                    </div>                    
+                </article>
+
+                <!-- Modal for client no.1 -->
+                <article class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content m-auto">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">ACTA</h1>
+                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                
+                            <div class="modal-body">
+                                <p>Μέλος του ομίλου της
+                                    <a href="https://tuvaustriahellas.gr/" target="_blank" id="inside">T&#220;V AUSTRIA HELLAS</a>
+                                </p>
+                    
+                                <p>Υπηρεσίες πιστοποίησης δεξιοτήτων &#40;Θεσσαλονίκη&#41;</p>
+                            </div>
+                
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Κλείσιμο</button>
+                
+                                <button type="button" class="btn btn-primary">
+                                    <a href="https://acta-edu.gr/" target="_blank" class="nav-link">Μετάβαση στον ιστότοπο</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card for client no.2 -->
+                <article class="col pt-3 d-flex justify-content-center">
+                    <div class="d-flex flex-column justify-content-between align-items-center pt-5 pb-4">
+                        <img src="../Logos/polis_kat.png" alt="Client no.2" id="logo-2">
+
+                        <button type="button" class="btn btn-primary py-2" data-bs-toggle="modal" data-bs-target="#Modal2">
+                            Πληροφορίες
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Modal for client no.2 -->
+                <article class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content m-auto">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">POLIS ΚΑΤΑΣΚΕΥΑΣΤΙΚΗ</h1>
+                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                
+                            <p class="modal-body">Κατασκευαστική εταιρεία δημόσιων και ιδιωτικών έργων &#40;Κοζάνη&#41;</p>
+                
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Κλείσιμο</button>
+                
+                                <button type="button" class="btn btn-primary">
+                                    <a href="http://www.polisconstructions.gr/" target="_blank" class="nav-link">Μετάβαση στον ιστότοπο</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card for client no.3 -->
+                <article class="col pt-3 d-flex justify-content-center">
+                    <div class="d-flex flex-column justify-content-between align-items-center pt-4 pb-4">
+                        <img src="../Logos/raphael.png" alt="Client no.3" id="logo-3">
+
+                        <button type="button" class="btn btn-primary py-2" data-bs-toggle="modal" data-bs-target="#Modal3">
+                            Πληροφορίες
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Modal for client no.3 -->
+                <article class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content m-auto">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Raphael Skiathos Living</h1>
+                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                
+                            <p class="modal-body">Ενοικιαζόμενα δωμάτια &#40;Σκιάθος&#41;</p>
+                
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Κλείσιμο</button>
+                
+                                <button type="button" class="btn btn-primary">
+                                    <a href="https://raphaelskiathos.gr/" target="_blank" class="nav-link">Μετάβαση στον ιστότοπο</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card for client no.4 -->
+                <article class="col py-3 d-flex justify-content-center">
+                    <div class="d-flex flex-column justify-content-between align-items-center pb-4">
+                        <img src="../Logos/iasis.png" alt="Client no.4" id="logo-4">
+
+                        <button type="button" class="btn btn-primary py-2" data-bs-toggle="modal" data-bs-target="#Modal4">
+                            Πληροφορίες
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Modal for client no.4 -->
+                <article class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content m-auto">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">ίασις ΚΟΖΑΝΗΣ</h1>
+                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                
+                            <p class="modal-body">Πολυχώρος υγείας &#40;Κοζάνη&#41;</p>
+                
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Κλείσιμο</button>
+                
+                                <button type="button" class="btn btn-primary">
+                                    <a href="https://iasiskozani.com/" target="_blank" class="nav-link">Μετάβαση στον ιστότοπο</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card for client no.5 -->
+                <article class="col py-3 d-flex justify-content-center">
+                    <div class="d-flex flex-column justify-content-between align-items-center pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" stroke-linejoin="round"
+                            stroke-miterlimit="2" clip-rule="evenodd" viewBox="0 0 245 60">
+                            <path fill-rule="nonzero" d="M156.53 56.2a5.74 5.74 0 0 0 1.92-4.3c0-3.55-3.13-6.16-7.06-6.16-3.92 0-7.05 2.61-7.05 6.16 0 3.55 3.13 6.16 7.05 6.16 1.15 0 2.21-.23
+                            3.15-.62l2.03 2.05 1.86-1.36-1.9-1.92Zm17.8 1.86c3.1 0 5.49-1.47 5.49-4.5V45.9h-2.8v7.52c0 1.74-.85 2.41-2.7 2.41-1.86 0-2.72-.66-2.72-2.41V45.9h-2.8v7.66c0 3.03 2.38
+                            4.5 5.53 4.5Zm-79.48 0c3.1 0 5.5-1.47 5.5-4.5V45.9h-2.82v7.52c0 1.74-.84 2.41-2.68 2.41-1.87 0-2.73-.66-2.73-2.41V45.9h-2.8v7.66c0 3.03 2.38 4.5 5.53 4.5Zm-22.93 0c3.92
+                            0 7.05-2.61 7.05-6.16 0-3.55-3.13-6.16-7.05-6.16-3.93 0-7.06 2.61-7.06 6.16 0 3.55 3.13 6.16 7.06 6.16Zm118.7-.16h9.3v-2.17h-6.49V54h5.47v-2.12h-5.47v-3.81h6.21V45.9h-9.02v12Zm-145.55
+                            0h5.52c2.84 0 4.57-1.57 4.57-3.7 0-1.5-.9-2.6-2.77-2.99 1.18-.33 1.93-1.1 1.93-2.2 0-1.7-1.43-3.11-3.97-3.11h-5.28v12Zm86.02 0h2.8v-12h-2.8v12Zm-16.84 
+                            0h2.8v-9.83h3.9V45.9h-10.59v2.17h3.9v9.83Zm-42.33-2.05c-2.49 0-4.17-1.7-4.17-3.95 0-2.24 1.68-3.95 4.17-3.95 2.48 0 4.17 1.71 4.17 3.95s-1.69 3.96-4.17
+                            3.96Zm80.86-.17c-.42.12-.88.17-1.38.17-2.49 0-4.17-1.7-4.17-3.95 0-2.24 1.68-3.95 4.17-3.95 2.48 0 4.17 1.71 4.17 3.95 0 1-.28 1.87-.8 2.52l-1.73-1.74-1.88 1.36 1.62
+                            1.64Zm-104.9.05v-3.3h2.43c1.28 0 2.02.67 2.02 1.64 0 .99-.72 1.66-1.86 1.66h-2.59Zm0-5.4v-2.26h2.3c.87 0 1.37.44 1.37 1.13s-.6 1.13-1.5
+                            1.13h-2.17Zm55.37-42.7c0-1.74-.34-2.97-1.02-3.66-.68-.7-1.94-1.1-3.76-1.2v-1.4h18.48v1.4c-1.97.08-3.28.43-3.93 1.04-.64.6-.96 1.88-.96 3.82v19.53c0 3.26.62 5.68 1.88 7.24
+                            1.25 1.56 3.2 2.35 5.82 2.35 3.21 0 5.61-.93 7.22-2.8 1.6-1.85 2.4-4.64 2.4-8.37V7.68c0-1.81-.36-3.06-1.08-3.73-.7-.67-2.1-1.06-4.16-1.19v-1.4h12.05v1.4c-1.63.2-2.84.63-3.44
+                            1.31-.6.68-.9 1.89-.9 3.62v16.06c0 2.56-.08 4.4-.24 5.5-.14 1.03-.4 2.04-.8 3a10.65 10.65 0 0 1-4.87 5.47c-2.27 1.26-5.07 1.89-8.38 1.89-4.96
+                            0-8.58-1.1-10.87-3.3-2.3-2.2-3.44-5.66-3.44-10.41V7.63Zm33.88 31.82V25.68h1.59c.9 3.97 2.24 6.9 4.04 8.81a9.14 9.14 0 0 0 6.97 2.87c2 0 3.63-.56 4.86-1.69a5.66 5.66 0 0 0
+                            1.86-4.39c0-1.27-.36-2.36-1.07-3.3a8.82 8.82 0 0 0-3.34-2.46l-5.1-2.54c-3.26-1.55-5.62-3.24-7.07-5.06a10.04 10.04 0 0 1-2.17-6.45c0-3.27 1.02-5.91 3.07-7.93 2.05-2.02 4.7-3.03
+                            7.97-3.03 1.9 0 3.87.3 5.92.87 2.05.58 3.2.87 3.48.87.46 0 .84-.15 1.14-.45.3-.3.49-.73.58-1.29h1.53v12h-1.37a14.94 14.94 0 0 0-4.06-7.4c-1.97-1.9-4.12-2.86-6.45-2.86-1.8 0-3.27.5-4.4
+                            1.47a4.81 4.81 0 0 0-1.7 3.8 4.94 4.94 0 0 0 1.28 3.38c.85.97 2.31 1.94 4.37 2.92l5.3 2.5c3.16 1.5 5.4 3.12 6.72 4.86a10.52 10.52 0 0 1 1.97 6.51c0 3.54-1.24 6.37-3.73
+                            8.5-2.5 2.14-5.81 3.2-9.97 3.2a18 18 0 0 1-5.52-.9c-1.89-.61-2.98-.92-3.29-.92-.55 0-.96.13-1.23.4-.27.25-.5.75-.7 1.48h-1.48Zm30.55-.88V37.2c1.91 0 3.22-.34 3.93-1.03.7-.69
+                            1.06-2.01 1.06-3.98V8.46c0-2.34-.34-3.87-1-4.59-.68-.72-1.95-1.1-3.83-1.14V1.37h31.37v11.08h-1.29c-.4-3.26-1.53-5.59-3.41-6.97-1.88-1.38-4.88-2.08-9-2.08-1.83
+                            0-2.95.2-3.38.62-.43.41-.65 1.35-.65 2.84v11.62h.89c2.4 0 4.18-.6 5.34-1.8 1.17-1.21 1.97-3.32 2.42-6.32h1.32v18.57h-1.37c-.3-3.22-1.04-5.44-2.26-6.67-1.22-1.23-3.26-1.85-6.12-1.85h-.22v12.67c0 1.3.25 2.16.74 2.6.5.42 1.54.64 3.15.64
+                            4.05 0 7.19-.72 9.42-2.16 2.23-1.44 4.02-3.86 5.39-7.27h1.55l-2.25 11.67h-31.8ZM46.35 35.83c3.27-2.5 3.02-24.32 3.18-24.32.15 0 .09 22.28 2.93 24.33 1.4 1.01
+                            1.45.94 3.51.98v1.74h-12.7v-1.74c1.9-.1 3.06-.97 3.08-.99Zm3.3-31.97c-.06-.1-.13-.2-.2-.28-.63-.66-2.01-.72-3.75-.85V1.37H59.6l10.85 25.57L81.3 1.37h13.75v1.4c-1.76.13-2.97.55-3.65
+                            1.25-.69.7-1.02 1.92-1.02 3.67V31.6c0 2.32.29 3.81.88 4.46.6.65 1.84 1.01 3.73 1.09v1.42h-18.1v-1.42c1.97-.15 3.27-.55 3.9-1.22.62-.67.94-2.06.94-4.17V5.97L68.1 38.57h-1.5L49.64 3.86Z">
+                            </path>
+                        </svg>
+
+                        <button type="button" class="btn btn-primary py-2" data-bs-toggle="modal" data-bs-target="#Modal5">
+                            Πληροφορίες
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Modal for client no.5 -->
+                <article class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content m-auto">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">MUSE BOUTIQUE</h1>
+                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                
+                            <p class="modal-body">Γυναικεία ενδύματα &#40;Κοζάνη&#41;</p>
+                
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Κλείσιμο</button>
+                
+                                <button type="button" class="btn btn-primary">
+                                    <a href="https://museboutique.gr/" target="_blank" class="nav-link">Μετάβαση στον ιστότοπο</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card for client no.6 -->
+                <article class="col py-3 d-flex justify-content-center">
+                    <div class="d-flex flex-column justify-content-between align-items-center pt-5 pb-4">
+                        <img src="../Logos/omikron.webp" alt="Client no.6" id="logo-6">
+
+                        <button type="button" class="btn btn-primary py-2" data-bs-toggle="modal" data-bs-target="#Modal6">
+                            Πληροφορίες
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Modal for client no.6 -->
+                <article class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content m-auto">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel"><i>Omikron</i> Διαφημιστική</h1>
+                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                
+                            <p class="modal-body">Διαφημιστικό γραφείο &#40;Κοζάνη&#41;</p>
+                
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Κλείσιμο</button>
+                
+                                <button type="button" class="btn btn-primary">
+                                    <a href="https://omikron.tv/" target="_blank" class="nav-link">Μετάβαση στον ιστότοπο</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card for client no.7 -->
+                <article class="col pb-3 d-flex justify-content-center">
+                    <div class="d-flex flex-column justify-content-between align-items-center pb-4">
+                        <img src="../Logos/e-kathigitis.png" alt="Client no.7" id="logo-7">
+
+                        <button type="button" class="btn btn-primary py-2" data-bs-toggle="modal" data-bs-target="#Modal7">
+                            Πληροφορίες
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Modal for client no.7 -->
+                <article class="modal fade" id="Modal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content m-auto">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Δολαπτσόπουλος Δημήτρης</h1>
+                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                
+                            <p class="modal-body">Φροντιστήριο Μ&#46;Ε&#46; &#40;Νεάπολη Κοζάνης&#41;</p>
+                
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Κλείσιμο</button>
+                
+                                <button type="button" class="btn btn-primary">
+                                    <a href="https://e-kathigitis.gr/" target="_blank" class="nav-link">Μετάβαση στον ιστότοπο</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card for client no.8 -->
+                <article class="col pb-3 d-flex justify-content-center">
+                    <div class="d-flex flex-column justify-content-between align-items-center pt-5 pb-4">
+                        <img src="../Logos/lactationland.png" alt="Client no.8" id="logo-8">
+
+                        <button type="button" class="btn btn-primary py-2" data-bs-toggle="modal" data-bs-target="#Modal8">
+                            Πληροφορίες
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Modal for client no.8 -->
+                <article class="modal fade" id="Modal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content m-auto">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Lactationland</h1>
+                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                
+                            <p class="modal-body">Θώμου Παρασκευή&#44; πιστοποιημένη σύμβουλος θηλασμού &#40;Κοζάνη&#44; Γρεβενά&#41;
+                            </p>
+                
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Κλείσιμο</button>
+                
+                                <button type="button" class="btn btn-primary">
+                                    <a href="https://www.lactationland.gr/" target="_blank" class="nav-link">Μετάβαση στον ιστότοπο</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card for client no.9 -->
+                <article id="last" class="col pb-3 d-flex justify-content-center">
+                    <div class="d-flex flex-column justify-content-between align-items-center pb-4">
+                        <img src="../Logos/woodenful.png" alt="Client no.9" id="logo-9">
+
+                        <button type="button" class="btn btn-primary py-2" data-bs-toggle="modal" data-bs-target="#Modal9">
+                            Πληροφορίες
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Modal for client no.9 -->
+                <article class="modal fade" id="Modal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content m-auto">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">WoodenFul</h1>
+                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                
+                            <p class="modal-body">Εμπόριο επίπλων &#40;Κοζάνη&#41;</p>
+                
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Κλείσιμο</button>
+                
+                                <button type="button" class="btn btn-primary">
+                                    <a href="https://woodenful.gr/" target="_blank" class="nav-link">Μετάβαση στον ιστότοπο</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer with three columns -->
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 pb-4 justify-content-evenly position-relative">
+        <!-- First column -->
+        <article class="col mb-3">
+            <h5 class="pb-1 mb-3">
+                <a href="./services.html" class="nav-link">Υπηρεσίες</a>
+            </h5>
+
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">Λογιστικές υπηρεσίες</li>
+
+                <li class="nav-item mb-2">Φορολογικές υπηρεσίες</li>
+
+                <li class="nav-item mb-2">Εξειδικευμένες υπηρεσίες</li>
+
+                <li class="nav-item mb-2">Εργατικά&#45;ασφαλιστικά</li>
+
+                <li class="nav-item mb-2">Υπηρεσίες σε συνεργασία με τρίτους</li>
+
+                <li class="nav-item mb-2">Υπηρεσίες μισθοδοσίας και απασχόλησης</li>
+
+                <li class="nav-item mb-2">Υπηρεσίες CFO</li>
+            </ul>
+        </article>
+
+        <!-- Second column -->
+        <article class="col mb-3">
+            <h5 class="pb-1 mb-3">
+                <a href="./clientele.html" class="nav-link">Πελατολόγιο</a>
+            </h5>
+
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">Εκπαίδευση</li>
+
+                <li class="nav-item mb-2">Τεχνικές εταιρείες</li>
+
+                <li class="nav-item mb-2">Ξενοδοχειακές επιχειρήσεις</li>
+
+                <li class="nav-item mb-2">Υγεία και ομορφιά</li>
+                
+                <li class="nav-item mb-2">Εμπορικές επιχειρήσεις</li>
+
+                <li class="nav-item mb-2">Επιχειρήσεις παροχής υπηρεσιών</li>
+            </ul>
+        </article>
+
+        <!-- Third column -->
+        <article class="col mb-3">
+            <h5 class="pb-1 mb-3">
+                <a href="./contact.html" class="nav-link">Επικοινωνία</a>
+            </h5>
+
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                    <a href="https://maps.app.goo.gl/cRAnTQ7Rm5EumrDDA" target="_blank"
+                        class="nav-link p-0" id="map">Πανόρμου 1&#44; Κοζάνη</a>
+                </li>
+
+                <li class="nav-item mb-2">2461 507255</li>
+
+                <li class="nav-item mb-2">694 854 6347</li>
+
+                <li class="nav-item mb-2">gkarakoulas&#64;gmail&#46;com</li>
+            </ul>
+        </article>
+
+        <!-- Back-to-top button -->
+        <a href="#" class="position-absolute bottom-0 end-0 m-5 p-1 d-flex justify-content-end align-items-center">
+            <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+        <!-- Το κουμπί θα ήθελα να εμφανίζεται πιο πάνω από το footer. Μήπως βολεύει να το κάνουμε με αυτόν τον τρόπο;
+            Θα έχουμε θέμα με τον κώδικα από την Bootstrap;
+
+        https://www.w3schools.com/howto/howto_js_scroll_to_top.asp 
+        
+        -->
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Υπάρχει περίπτωση να τα χρειαστώ αυτά τα scripts;
+        
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> 
+        
+    -->
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+:root {
+    --mainColor1: oklch(0.7071 0.0487 182.43); /* #7faba3 */
+    --mainColor2: oklch(0.7071 0.15 182.43);
+    --mainColor3: oklch(0.83799 0.06878 185.567);
+    --secondaryColor1: oklch(0.5994 0.0714 235.53); /* #5487a5 */
+    --secondaryColor2: oklch(0.8 0.0714 235.53);
+    --secondaryColor3: oklch(0.3 0.0714 235.53);
+    --accentColor: white;
+    --blur1: oklch(0.7071 0.15 182.43 / 0.7);
+    --blur2: rgba(255, 255, 255, 0.8);
+    --empty: rgba(0, 0, 0, 0);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::before {
+    display: block;
+    content: '';
+    height: 72px;
+}
+
+body {
+    font-family: Geologica, Arial, Helvetica, sans-serif;
+    background-color: var(--accentColor);
+    background: radial-gradient(circle, transparent 20%, var(--accentColor) 20%, var(--accentColor) 80%, transparent 80%, transparent),
+    radial-gradient(circle, transparent 20%, var(--accentColor) 20%, var(--accentColor) 80%, transparent 80%, transparent) 25px 25px,
+    linear-gradient(var(--mainColor1) 2px, transparent 2px) 0 -1px,
+    linear-gradient(90deg, var(--mainColor1) 2px, var(--accentColor) 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+}
+
+
+/* CSS code for the navigation bar */
+.navbar {
+    background-color: var(--blur1);
+    backdrop-filter: blur(7px);
+    border-bottom: 2px solid var(--secondaryColor1);
+}
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+nav .nav-item, nav .nav-link {
+    border-radius: 20px;
+}
+
+.navbar .nav-link {
+    color: var(--secondaryColor3);
+    background-color: var(--accentColor);
+}
+
+.navbar li:nth-child(3) .nav-link {
+    color: var(--accentColor);
+    background-color: var(--secondaryColor3);
+}
+
+.navbar .nav-link:hover {
+    color: var(--accentColor);
+    background-color: var(--secondaryColor3);
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar {
+        padding: 1.5rem 0 !important;
+        width: 100vw;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav .nav-link {
+        font-size: 0.6rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+}
+
+
+/* CSS code for the accordion */
+.accordion-item {
+    border-color: var(--mainColor2);
+    background-color: var(--blur2);
+    backdrop-filter: blur(7px);
+}
+
+.accordion-button {
+    color: var(--secondaryColor3);
+    background-color: var(--empty);
+    padding: 2rem 2rem 2rem 1rem;
+    border-left: 2rem solid var(--mainColor3);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--mainColor3);
+}
+
+.accordion-button:focus {
+    background-color: var(--secondaryColor3);
+    color: var(--accentColor);
+    box-shadow: 0 0 0 0;
+}
+
+.accordion-button.collapsed {
+    background-color: var(--empty);
+    color: var(--secondaryColor3);
+}
+
+.accordion-body {
+    color: var(--secondaryColor3);
+    font-weight: 200; 
+}
+
+.accordion-body li {
+    padding: 0.5rem 0 0.75rem;
+}
+
+.accordion-body p {
+    margin: 0;
+    padding: 0.25rem 0;
+}
+
+.accordion-body a, .accordion-body p:first-child {
+    color: var(--secondaryColor3);
+    text-decoration: none;
+    padding-bottom: 0.125rem;
+    margin-bottom: 0.25rem;
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+
+.accordion-body a:hover {
+    color: var(--secondaryColor1);
+    border-bottom: 2px solid var(--secondaryColor2);
+}
+
+#inside {
+    font-weight: 200;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--secondaryColor2);
+}
+
+@media only screen and (min-width: 992px) {
+    .accordion {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .accordion-button, .accordion-body a, .accordion-body p:first-child {
+        font-size: 0.875rem;
+    }
+
+    .accordion-body p, #inside {
+        font-size: 0.75rem;
+    }
+
+    .accordion-body {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .accordion-button, .accordion-body a, .accordion-body p:first-child {
+        font-size: 0.75rem;
+    }
+
+    .accordion-body p, #inside {
+        font-size: 0.625rem;
+    }
+
+    .accordion-body {
+        font-size: 0.625rem;
+    }
+}
+
+@media only screen and (max-width: 465px) {
+    .accordion-button, .accordion-body a, .accordion-body p:first-child {
+        font-size: 0.55rem;
+    }
+
+    .accordion-body p, #inside {
+        font-size: 0.5rem;
+    }
+
+    .accordion-body {
+        font-size: 0.5rem;
+    }
+}
+
+
+/* CSS code for the footer */
+footer {
+    max-width: 100vw;
+    margin: 0 !important;
+    background-color: var(--mainColor3);
+    font-size: 0.875rem;
+    border-top: 1px solid var(--mainColor2);
+}
+
+footer .nav-item, footer h5 {
+    color: var(--secondaryColor3);
+}
+
+footer h5 {
+    border-bottom: 0 solid var(--secondaryColor3);
+    transition: border-bottom 100ms;
+}
+
+footer h5:hover {
+    border-bottom: 1px solid var(--secondaryColor3);
+}
+
+#map {
+    color: var(--secondaryColor3);
+    border-bottom: 0 solid var(--blur1);
+    border-radius: 0;
+    transition: border-bottom 100ms;
+}
+
+#map:hover {
+    border-bottom: 1px solid var(--blur1);
+}
+
+@media only screen and (max-width: 940px) {
+    footer {
+        font-size: 0.625rem;
+    }
+
+    footer h5 .nav-link {
+        font-size: 0.875rem;
+    }
+
+    footer .col {
+        max-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+    .col {
+        max-width: 150px;
+    }
+
+    footer .nav-link {
+        padding-left: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    footer h5 .nav-link {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 464px) {
+    footer {
+        font-size: 0.5rem;
+    }
+
+    footer h5 .nav-link {
+        font-size: 0.625rem;
+    }
+
+    footer .col {
+        max-width: 120px;
+    }
+}
