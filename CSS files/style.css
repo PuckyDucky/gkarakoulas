@@ -27,8 +27,6 @@ body {
     font-family: Geologica, Arial, Helvetica, sans-serif;
 }
 
-/* Πολλές ιδιότητες επαναλαμβάνονται αρκετές φορές (π.χ. backdrop-filter). Αν τις μαζέψω όλες σε ένα selector, θα είναι κατανοητός ο κώδικας; */
-
 
 /* CSS code for the navigation bar */
 .navbar {
@@ -80,6 +78,16 @@ nav .nav-item, nav .nav-link {
 }
 
 
+/* CSS code for the hero image */
+.hero {
+    border-bottom: 1px solid var(--mainColor2);
+}
+
+.hero img {
+    width: 100%;
+}
+
+
 /* CSS code for the carousel */
 .carousel-indicators button{
     background-color: var(--blur2) !important;
@@ -89,143 +97,9 @@ nav .nav-item, nav .nav-link {
     border-radius: 3px;
 }
 
-.carousel-item {
-    height: 90.6vh;
-    border-bottom: 1px solid var(--mainColor2);
-}
-
-.carousel-item:first-child {
-    background-image: url('../Images/accounting.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.carousel-item:nth-child(2) {
-    background-image: url('../Images/taxes.jpeg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.carousel-item:last-child {
-    background-image: url('../Images/budget.jpeg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-.background {
-    height: 100%;
-    background-color: var(--accentColor);
-    opacity: 0.4;
-}
-
-.carousel-caption {
-    padding-bottom: 5rem;
-}
-
-.carousel-caption h1, .carousel-caption p {
-    color: var(--secondaryColor3);
-    background-color: var(--blur3);
-    backdrop-filter: blur(7px);
-    border: 0 solid var(--secondaryColor1);
-    margin: 0;
-}
-
-.carousel-caption h1 {
-    border-radius: 1rem 1rem 0 0;
-    padding-top: 1rem;
-    border-width: 2px 2px 0 2px;
-}
-
-.carousel-caption a {
-    text-decoration: none;
-}
-
-.carousel-caption p {
-    font-weight: 300;
-    border-radius: 0 0 1rem 1rem;
-    padding: 1rem 0;
-    border-width: 0 2px 2px 2px;
-}
-
-.carousel-caption p:hover {
-    background-color: var(--blur1);
-}
-
-@media only screen and (max-width: 1210px) {
-    .carousel-caption h1 {
-        font-size: 2rem;
-    }
-    
-    .carousel-caption p {
-        font-size: 0.875rem;
-    }
-}
-
-@media only screen and (max-width: 1072px) {
-    .carousel-item:first-child {
-        background-size: cover;
-    }
-
-    .carousel-item:nth-child(2) {
-        background-size: cover;
-    }
-}
-
-@media only screen and (max-width: 1050px) {
-    .carousel-caption h1 {
-        font-size: 1.5rem;
-        padding-top: 0.75rem;
-    }
-    
-    .carousel-caption p {
-        font-size: 0.75rem;
-        padding: 0.75rem 0;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .carousel-item:last-child {
-        background-size: cover;
-        background-position-x: -1rem;
-    }
-}
-
-@media only screen and (max-width: 920px) {
-    .carousel-caption h1 {
-        font-size: 1rem;
-    }
-
-    .carousel-caption p {
-        font-size: 0.625rem;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .carousel-item:last-child {
-        background-size: cover;
-        background-position-x: -3rem;
-    }
-}
-
-@media only screen and (max-width: 540px) {
-    .carousel-caption h1 {
-        font-size: 0.875rem;
-    }
-
-    .carousel-caption p {
-        font-size: 0.5rem;
-        padding: 0.75rem 0.25rem;
-    }
-
-    .carousel-item:last-child {
-        background-size: cover;
-        background-position-x: -19rem;
-    }
-}
- 
 
 /* CSS code for the grid */
-section {
+#carouselExampleIndicators  {
     background-color: var(--accentColor);
     background: radial-gradient(circle, transparent 20%, var(--accentColor) 20%, var(--accentColor) 80%, transparent 80%, transparent),
     radial-gradient(circle, transparent 20%, var(--accentColor) 20%, var(--accentColor) 80%, transparent 80%, transparent) 25px 25px,
@@ -248,32 +122,65 @@ section .col div {
     height: 250px;
 }
 
-#logo-1, #logo-4 {
+#logo-1, #logo-10 {
     width: 120px;
 }
 
-svg, #logo-7, #logo-9 {
-    height: 60px;
-}
-
-#logo-7, #logo-9 {
-    margin-top: 2.5rem;
-}
-
-#logo-1 {
+#logo-1, #logo-14 {
     margin-top: 0.875rem;
 }
 
-#logo-2 {
+#logo-2, #logo-6  {
     height: 70px;
 }
 
 #logo-3 {
+    height: 40px;
+}
+
+#logo-3, #logo-12 {
+    margin-top: 1rem;
+}
+
+#logo-4, svg, #logo-16 {
+    height: 60px;
+}
+
+#logo-4, #logo-16 {
+    margin-top: 2.5rem;
+}
+
+#logo-5 {
+    width: 250px;
+}
+
+#logo-7 {
+    height: 110px;
+}
+
+#logo-8 {
+    height: 75px;
+}
+
+#logo-7, #logo-8 {
+    margin-top: 0.6rem;
+}
+
+#logo-9, #logo-12, #logo-14 {
     width: 200px;
 }
 
-#logo-4 {
+#logo-10 {
     margin-top: 1.25rem;
+}
+
+#logo-11 {
+    height: 90px;
+}
+
+#logo-13 {
+    height: 120px;
+    margin-top: 0.5rem;
 }
 
 svg {
@@ -281,12 +188,12 @@ svg {
     margin-top: 3rem;
 }
 
-#logo-6 {
-    width: 170px;
+#logo-17 {
+    height: 150px;
 }
 
-#logo-8 {
-    height: 90px;
+#logo-18 {
+    width: 170px;
 }
 
 .btn {
@@ -353,12 +260,13 @@ svg {
 }
 
 @media only screen and (max-width: 992px) {
-    #logo-1, #logo-2, #logo-3, #logo-4, svg, #logo-6, #logo-7, #logo-8, #logo-9 {
+    #logo-1, #logo-2, #logo-3, #logo-4, #logo-5, #logo-6, #logo-7, #logo-8, #logo-9, #logo-10, #logo-11, #logo-12, #logo-13, #logo-14, svg,
+    #logo-16, #logo-17, #logo-18 {
         transform: scale(0.8);
         transform-origin: center;
     }
 
-    #last {
+    .column-3 {
         display: none !important;
     }
 }
@@ -375,7 +283,8 @@ svg {
         height: 240px;
     }
 
-    #logo-1, #logo-2, #logo-3, #logo-4, svg, #logo-6, #logo-7, #logo-8, #logo-9 {
+    #logo-1, #logo-2, #logo-3, #logo-4, #logo-5, #logo-6, #logo-7, #logo-8, #logo-9, #logo-10, #logo-11, #logo-12, #logo-13, #logo-14, svg,
+    #logo-16, #logo-17, #logo-18 {
         transform: scale(0.5);
         transform-origin: center;
     }    
@@ -387,9 +296,14 @@ svg {
         height: 220px;
     }
 
-    #logo-1, #logo-2, #logo-3, #logo-4, svg, #logo-6, #logo-7, #logo-8, #logo-9 {
+    #logo-1, #logo-2, #logo-3, #logo-4, #logo-5, #logo-6, #logo-7, #logo-8, #logo-9, #logo-10, #logo-11, #logo-12, #logo-13, #logo-14, svg,
+    #logo-16, #logo-17, #logo-18 {
         transform: scale(0.6);
         transform-origin: center;
+    }
+
+    .row-3 {
+        display: none !important;
     }
 
     .modal-content {

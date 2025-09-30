@@ -111,6 +111,7 @@ h2, div {
 .form-control:focus {
     border-color: var(--secondaryColor2);
     box-shadow: 0 0 0 0.125rem var(--secondaryColor2) inset;
+    caret-color: var(--secondaryColor3) !important;
 }
 
 .form-select {
@@ -121,12 +122,10 @@ h2, div {
 .form-select:focus {
     border-color: var(--secondaryColor2);
     box-shadow: 0 0 0 0.125rem var(--secondaryColor2) inset;
-    /* Μπορώ να κάνω πιο στρογγυλές τις γωνίες του dropdown menu; */
 }
 
 .input-group {
     width: 83%;
-    
 }
 
 .input-group-text {
@@ -138,8 +137,8 @@ textarea {
     max-height: 100px;
     border-color: var(--secondaryColor2) !important;
     color: var(--secondaryColor3) !important;
-    /* Πώς βρίσκω στον κώδικα τις δύο διαγώνιες γραμμές, για να αλλάξω το χρώμα τους; */
-    /* Πώς βρίσκω στον κώδικα τον κέρσορα, για να τον κάνω πιο λεπτό; */
+    resize: none;
+    caret-color: var(--secondaryColor3) !important;
 }
 
 .btn {
