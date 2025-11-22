@@ -7,13 +7,14 @@
     --secondaryColor3: oklch(0.3 0.0714 235.53);
     --accentColor: white;
     --blur1: oklch(0.7071 0.15 182.43 / 0.7);
-    --blur2: rgba(255, 255, 255, 0.8);
+    --blur2: oklch(0.5994 0.0714 235.53 / 0.6);
+    --blur3: rgba(255, 255, 255, 0.8);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900');
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body::before {
@@ -26,9 +27,9 @@ body {
     font-family: Geologica, Arial, Helvetica, sans-serif;
     background-color: var(--accentColor);
     background: radial-gradient(circle, transparent 20%, var(--accentColor) 20%, var(--accentColor) 80%, transparent 80%, transparent),
-    radial-gradient(circle, transparent 20%, var(--accentColor) 20%, var(--accentColor) 80%, transparent 80%, transparent) 25px 25px,
-    linear-gradient(var(--mainColor1) 2px, transparent 2px) 0 -1px,
-    linear-gradient(90deg, var(--mainColor1) 2px, var(--accentColor) 2px) -1px 0;
+        radial-gradient(circle, transparent 20%, var(--accentColor) 20%, var(--accentColor) 80%, transparent 80%, transparent) 25px 25px,
+        linear-gradient(var(--mainColor1) 2px, transparent 2px) 0 -1px,
+        linear-gradient(90deg, var(--mainColor1) 2px, var(--accentColor) 2px) -1px 0;
     background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 }
 
@@ -63,6 +64,7 @@ nav .nav-item, nav .nav-link {
     background-color: var(--secondaryColor3);
 }
 
+/* Media queries for the navigation bar */
 @media only screen and (max-width: 576px) {
     .navbar {
         padding: 1.5rem 0 !important;
@@ -83,148 +85,139 @@ nav .nav-item, nav .nav-link {
 }
 
 
-/* CSS code for the form */
-section {
-    background-color: var(--blur2);
+/* CSS code for contact information */
+#contact-info-section {
+    background-color: var(--blur3);
     backdrop-filter: blur(7px);
     max-width: 85vw;
-    height: 80vh;
-    padding-top: 2rem;
+    height: 85vh;
     margin: 0 auto;
     border: 0 solid var(--mainColor2);
     border-width: 0 1px;
 }
 
-h2, div {
-    color: var(--secondaryColor3) !important;
+#contact-title-container {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInSlideDown 1s ease-out forwards;
+    padding-top: 4rem;
 }
 
-.row {
-    margin: 0;
-}
-
-.form-control {
-    color: var(--secondaryColor3) !important;
-    border-color: var(--secondaryColor2);
-}
-
-.form-control:focus {
-    border-color: var(--secondaryColor2);
-    box-shadow: 0 0 0 0.125rem var(--secondaryColor2) inset;
-    caret-color: var(--secondaryColor3) !important;
-}
-
-.form-select {
-    border-color: var(--secondaryColor2);
-    color: var(--secondaryColor3) !important;
-}
-
-.form-select:focus {
-    border-color: var(--secondaryColor2);
-    box-shadow: 0 0 0 0.125rem var(--secondaryColor2) inset;
-}
-
-.input-group {
-    width: 83%;
-}
-
-.input-group-text {
-    background-color: var(--secondaryColor2);
-    border-color: var(--secondaryColor2);
-}
-
-textarea {
-    max-height: 100px;
-    border-color: var(--secondaryColor2) !important;
-    color: var(--secondaryColor3) !important;
-    resize: none;
-    caret-color: var(--secondaryColor3) !important;
-}
-
-.btn {
-    background-color: var(--secondaryColor3);
-    border-color: var(--secondaryColor3);
-}
-
-.btn:hover {
-    background-color: var(--mainColor3);
-    border-color: var(--mainColor2);
+#contact-title-container h2 {
     color: var(--secondaryColor3);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
 
-.btn:first-child:active, .btn-check:checked+.btn, .btn.active, .btn.show, :not(.btn-check)+.btn:active {
-    background-color: var(--secondaryColor3);
-    border-color: var(--secondaryColor3);
-}
-
-.btn:focus-visible {
+#contact-card {
+    width: 100%;
+    height: 80%;
     color: var(--secondaryColor3);
-    background-color: var(--mainColor3);
-    border-color: var(--mainColor2);
-    box-shadow: 0 0 0 0;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: scaleAndFadeIn 1s ease-out 1s forwards;
 }
 
-@media only screen and (max-width: 1000px) {
-    h2 {
-        font-size: 1.75rem;
+.info-line {
+    width: 40%;
+    background-color: var(--blur2);
+    backdrop-filter: blur(7px);
+    color: var(--accentColor) !important;
+    display: flex;
+    align-items: center;
+}
+
+.info-line i {
+    color: var(--accentColor);
+    min-width: 25px;
+}
+
+.info-line:last-child {
+    margin-bottom: 0;
+}
+
+.info-line, .info-line i {
+    font-size: clamp(0.9rem, 2.5vw, 1.15rem);
+}
+
+/* Animation the title */
+@keyframes fadeInSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
     }
-    
-    .form-label, .form-select, .input-group-text, .btn-primary {
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        color: var(--secondaryColor3);
+    }
+}
+
+/* Animation for the card */
+@keyframes scaleAndFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Media queries for contact information */
+@media only screen and (max-width: 992px) {    
+    #contact-title-container h2 {
+        font-size: 2rem;
+    }
+
+    .info-line, .info-line i {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    #contact-info-section {
+        height: 70vh;
+    }
+
+    #contact-title-container h2 {
+        font-size: 1.875rem;
+    }
+
+    .info-line, .info-line i {
         font-size: 0.875rem;
     }
 }
 
-@media only screen and (max-width: 992px) {    
-    .input-group {
-        width: 75%;
+@media only screen and (max-width: 750px) {
+    #contact-title-container h2 {
+        font-size: 1.75rem;
     }
-}
 
-@media only screen and (max-width: 940px) {
-    h2 {
-        font-size: 1.625rem;
-    }
-    
-    .form-label, .form-select, .input-group-text, .btn-primary {
+    .info-line, .info-line i {
         font-size: 0.75rem;
     }
 }
 
-@media only screen and (max-width: 576px) {
-    section {
-        padding-top: 1rem;
-        height: 100%;
-        padding-bottom: 2rem;
+@media only screen and (max-width: 675px) {
+    .info-line {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #contact-title-container h2 {
+        font-size: 1.5rem;
     }
 
-    h2 {
-        margin-bottom: 0.75rem;
-        padding-left: 0.75rem;
+    .info-line {
+        width: 80%;
     }
 
-    .pt-3 {
-        padding-top: 0 !important;
-    }
-    
-    .col-sm-6 {
-        width: 100%;
-    }
-
-    .col-sm-5 {
-        width: 100%;
-    }
-
-    .col-sm-4 {
-        width: 100%;
-    }
-
-    .col-sm-3 {
-        width: 100%;
-    }
-
-    .input-group {
-        width: 100%;
-        margin: 1.5rem 0;
+    .info-line, .info-line i {
+        font-size: 0.625rem;
     }
 }
 
@@ -262,6 +255,7 @@ footer h5:hover {
     border-bottom: 1px solid var(--blur1);
 }
 
+/* Media queries for the footer */
 @media only screen and (max-width: 940px) {
     footer {
         font-size: 0.625rem;
